@@ -8,10 +8,24 @@ public class Main {
 
         }
         System.out.println(Arrays.toString(a));
+        //冒泡排序
       //  bubbleSort bubbleSort = new bubbleSort();
        // a =  bubbleSort.sort(a);
-        insertSort insertSort = new insertSort();
-        a = insertSort.sort(a);
-        System.out.println(Arrays.toString(a));
+        //插入排序
+//        insertSort insertSort = new insertSort();
+//        a = insertSort.sort(a);
+//        System.out.println(Arrays.toString(a));
+
+        mergeSort mergeSort = new mergeSort();
+       a = mergeSort.sort(a);
+       System.out.println(Arrays.toString(a));
+//        selectSort selectSort = new selectSort();
+//        a = selectSort.sort(a);
+//        System.out.println(Arrays.toString(a));
+        int[] t = {1, 3, 5};
+        int[] w = {2, 4, 6,8,10};
+        mergeSort mergeSort1 = new mergeSort();
+        System.out.println(Arrays.toString(mergeSort1.merge(t,w)));
+
     }
 }
