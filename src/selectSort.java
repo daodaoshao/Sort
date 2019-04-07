@@ -6,7 +6,7 @@ public class selectSort implements Sort{
         for (int i = 0; i < length - 1; ++i) { //  外层循环为已排空间
             int k = i ;
             //int temp = array[j];
-            for (int j = k + 1; j < length; ++j) {
+            for (int j = k + 1; j < length; ++j) { //内层循环为未排区间
                 if (array[j] < array[k]){
                     k = j;
                 }
